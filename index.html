@@ -19,11 +19,11 @@
     <body>
 
         <!-- Navigation Bar -->
-        <div class="wrap">
+        <header>
+          <div class="logo">
+            <img src="images/logo/white_logo.png" class="mono" alt="">
+          </div>
           <nav>
-            <div class="logo">
-              <img src="images/logo/white_logo.png" class="mono" alt="">
-            </div>
             <ul>
               <li><a href="#" class="active">Home</a></li>
               <li><a href="#about-us">About</a></li>
@@ -32,7 +32,10 @@
               <li><a href="#fancy-form">contact</a></li>
             </ul>
           </nav>  
-        </div>
+          <div class="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></div>
+          <div class="close-toggle"><i class="fa fa-close" aria-hidden="true"></i></div>
+        </header>
+          
         <!-- PORTION-1 (SSDC) // PART I -->
         <section id="top_image">
             <!-- Table's image -->
@@ -84,8 +87,8 @@
                     <div><img src="images/1.png" alt=""></div>
                     <div><img src="images/0.png" alt=""></div>
                     <div><img src="images/1.png" alt=""></div>
-                     
-              </div>
+                    
+              </div> 
               <!-- 3 parts - About Us, Transition massege and What we teach -->
               <div class="main-portion" id="about-us">
                 <!-- About US -->
@@ -131,11 +134,11 @@
                 </div>
                 <!-- What we Teaches -->
                 <div class="skills">
-                    <!-- <header><h1>Skills Container</h1></header> -->
-                    <div class="main">
+                  <div class="main">
                       <div class="ia-skills">
                         <figure>
                           <img src="images/skills/cc.jpg" alt="image-01">
+                          <img src="images/skills/mobile/cc.jpg" class="mobile">
                           <input type="radio" name="radio-set" checked="checked">
                           <figcaption><span class="click">Competitive Programming teaches you to find 
                             the easiest solution in the quickest possible way. CP enhances your 
@@ -146,6 +149,7 @@
                           <figcaption><a href="#">more</a></figcaption>
                           <figure>
                             <img src="images/skills/web.jpg" alt="image-02">
+                            <img src="images/skills/mobile/web.jpg" class="mobile">
                             <input type="radio" name="radio-set" checked="checked">
                             <figcaption><span class="click">Web development services help your company 
                               to increase product knowledge, maintain communication between you and 
@@ -156,6 +160,7 @@
                             <figcaption><a href="#">more</a></figcaption>
                             <figure>
                               <img src="images/skills/app.jpg" alt="image-03">
+                              <img src="images/skills/mobile/app.jpg" class="mobile">
                               <input type="radio" name="radio-set" checked="checked">
                               <figcaption><span class="click">For a user, the important of mobile 
                                 application development is of great importance. Portability and ease of 
@@ -165,7 +170,8 @@
                               <figcaption><span class="skill-name">App Development</span></figcaption>
                               <figcaption><a href="#">more</a></figcaption>
                               <figure>
-                              <img src="images/skills/ml.jpg" alt="image-04">
+                                <img src="images/skills/ml.jpg" alt="image-04">
+                                <img src="images/skills/mobile/ml.jpg" class="mobile">
                                 <input type="radio" name="radio-set" checked="checked">
                                 <figcaption><span class="click">Machine learning is important because as 
                                   models are exposed to new data, they are able to independently adapt. 
@@ -176,6 +182,7 @@
                                 <figcaption><a href="#">more</a></figcaption>
                                 <figure>
                                   <img src="images/skills/cyber.jpg" alt="image-05">
+                                  <img src="images/skills/mobile/cyber.jpg" class="mobile">
                                   <input type="radio" name="radio-set" checked="checked">
                                   <figcaption><span class="click">Cybersecurity is important because it 
                                     encompasses everything that pertains to protecting our sensitive data, 
@@ -186,6 +193,7 @@
                                   <figcaption><a href="#">more</a></figcaption>
                                   <figure>
                                     <img src="images/skills/game.jpg" alt="image-06">
+                                    <img src="images/skills/mobile/game.jpg" class="mobile">
                                     <input type="radio" name="radio-set" checked="checked">
                                     <figcaption><span class="click">It encourages teamwork and reinforces 
                                       problem-solving concepts. It helps kids get hands-on with technology. 
@@ -195,6 +203,7 @@
                                     <figcaption><a href="#">more</a></figcaption>
                                     <figure>
                                       <img src="images/skills/graphics.jpg" alt="image-07">
+                                      <img src="images/skills/mobile/graphics.jpg" class="mobile">
                                       <input type="radio" name="radio-set" checked="checked">
                                       <figcaption><span class="click">Graphic design is a crucial tool that 
                                         makes sure that you communicate with your people in an efficient manner. 
@@ -212,31 +221,28 @@
                         </figure>
                       </div>
                     </div>
-                </div>
+                </div> 
+              
               </div>
               <!-- Our Activities -->
+              
               <div class="hero-carousel" id="activities" data-flickity="" data-js="hero-carousel">
-                <!-- First card -->
+                
                 <div class="hero-carousel__cell hero-carousel__cell--1">
                   <div class="post">
               
-                    <!-- Upper Card -->
                     <div class="blog">
                     <div class="blog-post">
-                      <!-- Upper Card Image -->
                       <div class="blog-post__img">
                       <img src="images/slider/hackerrank.png" alt="">
                       </div>
-                      <!-- Upper Card Details -->
                       <div class="blog-post__info">
-                      <!-- Date & Time of the achivement -->
                       <div class="blog-post__date">
                         <span>Sunday,</span>
                         <span>October 12 2019</span>
                       </div>
-                      <!-- Achivement Headline -->
                       <h1 class="bog-post__title">Hello Guys... I'm here</h1>
-                      <!-- About the Achivement -->
+                      
                       <p class="blog-post__text">bhjb xjkbk rlk43 llk kmk mgkm 
                         lkmglm lkm rkm mr mt mrt mrmt;lm;rmt ;m;rlmk trnt lkrmt 
                         rtkm rkm mn nn k uhuyg yg uyg ih ih iuhieh gehiug heiuh 
@@ -245,46 +251,35 @@
                         uhiuhiuhui huih uih iuh ihiuxb hbker fm ekbkrf kbueb 
                         kbkjb jb h jh  hon oih oubk iu bugiy gigi y vk big jiu 
                         ljhou jh iub jh</p>
-                      <!-- Clickable link for more information about the achivement and Result -->
                       <a href="#" class="blog-post__cta">Read more</a>
-                      <!-- Placeholder's Names -->
                       <div class="prize">
                         <div class="third">
                           <img src="images/batch/gold.png" alt="">
-                          <!-- First Placeholder's name with Registration number-->
                           <span>Ankit (GCS-1740558)</span>
                         </div>
                         <div class="third">
                           <img src="images/batch/silver.png" alt="">
-                          <!-- Second Placeholder's name with Registration number-->
                           <span>Ankit (GCS-1740558)</span>
                         </div>
                         <div class="third">
                           <img src="images/batch/bronze.png" alt="">
-                          <!-- Third Placeholder's name with Registration number-->
                           <span>Ankit (GCS-1740558)</span>
                         </div>
                        </div>
                       </div>
                     </div>
                     </div>
-                    <!-- Lower Card -->
                     <div class="blog">
                     <div class="blog-post">
-                      <!-- Lower Card Image -->
                       <div class="blog-post__img">
                       <img src="images/slider/hackerrank.png" alt="">
                       </div>
-                      <!-- Lower Card Details -->
                       <div class="blog-post__info">
-                      <!-- Date & Time of the achivement -->
                       <div class="blog-post__date">
                         <span>Sunday,</span>
                         <span>4 April 2020</span>
                       </div>
-                      <!-- Achivement Headline -->
                       <h1 class="bog-post__title">Mind Stormer - Arp 20</h1>
-                      <!-- About the Achivement -->
                       <p class="blog-post__text">bhjb xjkbk rlk43 llk kmk mgkm 
                         lkmglm lkm rkm mr mt mrt mrmt;lm;rmt ;m;rlmk trnt lkrmt 
                         rtkm rkm mn nn k uhuyg yg uyg ih ih iuhieh gehiug heiuh 
@@ -293,23 +288,18 @@
                         uhiuhiuhui huih uih iuh ihiuxb hbker fm ekbkrf kbueb 
                         kbkjb jb h jh  hon oih oubk iu bugiy gigi y vk big jiu 
                         ljhou jh iub jh</p>
-                      <!-- Clickable link for more information about the achivement and Result -->
                       <a href="#" class="blog-post__cta">Read more</a>
-                      <!-- Placeholder's Names -->
                       <div class="prize">
                         <div class="third">
                           <img src="images/batch/gold.png" alt="">
-                          <!-- First Placeholder's name with Registration number-->
                           <span>Punit Sharma</span>
                         </div>
                         <div class="third">
                           <img src="images/batch/silver.png" alt="">
-                          <!-- Second Placeholder's name with Registration number-->
                           <span>Mohd Ammad Rehman</span>
                         </div>
                         <div class="third">
                           <img src="images/batch/bronze.png" alt="">
-                          <!-- Third Placeholder's name with Registration number-->
                           <span>Adarsh Prashar</span>
                         </div>
                        </div>
@@ -319,27 +309,20 @@
               
                   </div>
                 </div>
-                <!-- Second card -->
                 <div class="hero-carousel__cell hero-carousel__cell--2">
                   <div class="post">
               
-                    <!-- Upper Card -->
                     <div class="blog">
                     <div class="blog-post">
-                      <!-- Upper Card Image -->
                       <div class="blog-post__img">
                       <img src="images/slider/hackerrank.png" alt="">
                       </div>
-                      <!-- Upper Card Details -->
                       <div class="blog-post__info">
-                      <!-- Date & Time of the achivement -->
                       <div class="blog-post__date">
                         <span>Sunday,</span>
                         <span>23 February 2020</span>
                       </div>
-                      <!-- Achivement Headline -->
                       <h1 class="bog-post__title">Mind Stormer - Feb 20</h1>
-                      <!-- About the Achivement -->
                       <p class="blog-post__text">bhjb xjkbk rlk43 llk kmk mgkm 
                         lkmglm lkm rkm mr mt mrt mrmt;lm;rmt ;m;rlmk trnt lkrmt 
                         rtkm rkm mn nn k uhuyg yg uyg ih ih iuhieh gehiug heiuh 
@@ -348,46 +331,35 @@
                         uhiuhiuhui huih uih iuh ihiuxb hbker fm ekbkrf kbueb 
                         kbkjb jb h jh  hon oih oubk iu bugiy gigi y vk big jiu 
                         ljhou jh iub jh</p>
-                      <!-- Clickable link for more information about the achivement and Result -->
                       <a href="#" class="blog-post__cta">Read more</a>
-                      <!-- Placeholder's Names -->
                       <div class="prize">
                         <div class="third">
                           <img src="images/batch/gold.png" alt="">
-                          <!-- First Placeholder's name with Registration number-->
                           <span>Adish Jain</span>
                         </div>
                         <div class="third">
                           <img src="images/batch/silver.png" alt="">
-                          <!-- Second Placeholder's name with Registration number-->
                           <span>Amit Patil</span>
                         </div>
                         <div class="third">
                           <img src="images/batch/bronze.png" alt="">
-                          <!-- Third Placeholder's name with Registration number-->
                           <span>Nem Singh</span>
                         </div>
                        </div>
                       </div>
                     </div>
                     </div>
-                    <!-- Lower Card -->
                     <div class="blog">
                     <div class="blog-post">
-                      <!-- Lower Card Image -->
                       <div class="blog-post__img">
                       <img src="images/1.jpg" alt="">
                       </div>
-                      <!-- Lower Card Details -->
                       <div class="blog-post__info">
-                      <!-- Date & Time of the achivement -->
                       <div class="blog-post__date">
                         <span>Sunday,</span>
                         <span>October 12 2019</span>
                       </div>
-                      <!-- Achivement Headline -->
                       <h1 class="bog-post__title">Hello Guys... I'm here</h1>
-                      <!-- About the Achivement -->
                       <p class="blog-post__text">bhjb xjkbk rlk43 llk kmk mgkm 
                         lkmglm lkm rkm mr mt mrt mrmt;lm;rmt ;m;rlmk trnt lkrmt 
                         rtkm rkm mn nn k uhuyg yg uyg ih ih iuhieh gehiug heiuh 
@@ -396,23 +368,18 @@
                         uhiuhiuhui huih uih iuh ihiuxb hbker fm ekbkrf kbueb 
                         kbkjb jb h jh  hon oih oubk iu bugiy gigi y vk big jiu 
                         ljhou jh iub jh</p>
-                      <!-- Clickable link for more information about the achivement and Result -->
                       <a href="#" class="blog-post__cta">Read more</a>
-                      <!-- Placeholder's Names -->
                       <div class="prize">
                         <div class="third">
                           <img src="images/batch/gold.png" alt="">
-                          <!-- First Placeholder's name with Registration number-->
                           <span>Ankit (GCS-1740558)</span>
                         </div>
                         <div class="third">
                           <img src="images/batch/silver.png" alt="">
-                          <!-- Second Placeholder's name with Registration number-->
                           <span>Ankit (GCS-1740558)</span>
                         </div>
                         <div class="third">
                           <img src="images/batch/bronze.png" alt="">
-                          <!-- Third Placeholder's name with Registration number-->
                           <span>Ankit (GCS-1740558)</span>
                         </div>
                        </div>
@@ -422,27 +389,20 @@
                     
                   </div>
                 </div>
-                <!-- Third card -->
                 <div class="hero-carousel__cell hero-carousel__cell--3">
                 <div class="post">
               
-                  <!-- Upper Card -->
                   <div class="blog">
                   <div class="blog-post">
-                    <!-- Upper Card Image -->
                     <div class="blog-post__img">
                     <img src="images/2.jpg" alt="">
                     </div>
-                    <!-- Upper Card Details -->
                     <div class="blog-post__info">
-                    <!-- Date & Time of the achivement -->
                     <div class="blog-post__date">
                       <span>Sunday,</span>
                       <span>October 12 2019</span>
                     </div>
-                    <!-- Achivement Headline -->
                     <h1 class="bog-post__title">Hello Guys... I'm here</h1>
-                    <!-- About the Achivement -->
                     <p class="blog-post__text">bhjb xjkbk rlk43 llk kmk mgkm 
                       lkmglm lkm rkm mr mt mrt mrmt;lm;rmt ;m;rlmk trnt lkrmt 
                       rtkm rkm mn nn k uhuyg yg uyg ih ih iuhieh gehiug heiuh 
@@ -451,46 +411,42 @@
                       uhiuhiuhui huih uih iuh ihiuxb hbker fm ekbkrf kbueb 
                       kbkjb jb h jh  hon oih oubk iu bugiy gigi y vk big jiu 
                       ljhou jh iub jh</p>
-                    <!-- Clickable link for more information about the achivement and Result -->
                     <a href="#" class="blog-post__cta">Read more</a>
-                    <!-- Placeholder's Names -->
                     <div class="prize">
                       <div class="third">
                         <img src="images/batch/gold.png" alt="">
-                        <!-- First Placeholder's name with Registration number-->
                         <span>Ankit (GCS-1740558)</span>
                       </div>
                       <div class="third">
                         <img src="images/batch/silver.png" alt="">
-                        <!-- Second Placeholder's name with Registration number-->
+              
                         <span>Ankit (GCS-1740558)</span>
                       </div>
                       <div class="third">
                         <img src="images/batch/bronze.png" alt="">
-                        <!-- Third Placeholder's name with Registration number-->
+              
                         <span>Ankit (GCS-1740558)</span>
                       </div>
                      </div>
                     </div>
                   </div>
                   </div>
-                  <!-- Lower Card -->
+              
                   <div class="blog">
                   <div class="blog-post">
-                    <!-- Lower Card Image -->
+              
                     <div class="blog-post__img">
                     <img src="images/slider/hackerrank.png" alt="">
                     </div>
-                    <!-- Lower Card Details -->
+              
                     <div class="blog-post__info">
-                    <!-- Date & Time of the achivement -->
                     <div class="blog-post__date">
                       <span>Sunday,</span>
                       <span>15 December 2019</span>
                     </div>
-                    <!-- Achivement Headline -->
+               
                     <h1 class="bog-post__title">Mind Stormer - Dec 19</h1>
-                    <!-- About the Achivement -->
+              
                     <p class="blog-post__text">bhjb xjkbk rlk43 llk kmk mgkm 
                       lkmglm lkm rkm mr mt mrt mrmt;lm;rmt ;m;rlmk trnt lkrmt 
                       rtkm rkm mn nn k uhuyg yg uyg ih ih iuhieh gehiug heiuh 
@@ -499,23 +455,23 @@
                       uhiuhiuhui huih uih iuh ihiuxb hbker fm ekbkrf kbueb 
                       kbkjb jb h jh  hon oih oubk iu bugiy gigi y vk big jiu 
                       ljhou jh iub jh</p>
-                    <!-- Clickable link for more information about the achivement and Result -->
-                    <a href="#" class="blog-post__cta">Read more</a>
-                    <!-- Placeholder's Names -->
-                    <div class="prize">
+              
+                      <a href="#" class="blog-post__cta">Read more</a>
+              
+                      <div class="prize">
                       <div class="third">
                         <img src="images/batch/gold.png" alt="">
-                        <!-- First Placeholder's name with Registration number-->
+              
                         <span>Sahil Sharma</span>
                       </div>
                       <div class="third">
                         <img src="images/batch/silver.png" alt="">
-                        <!-- Second Placeholder's name with Registration number-->
+              
                         <span>Prateek Rai</span>
                       </div>
                       <div class="third">
                         <img src="images/batch/bronze.png" alt="">
-                        <!-- Third Placeholder's name with Registration number-->
+              
                         <span>Shrawan Kumar</span>
                       </div>
                      </div>
@@ -525,27 +481,28 @@
                   
                 </div>
                 </div>
-                <!-- Forth card -->
+              
                 <div class="hero-carousel__cell hero-carousel__cell--4">
                 <div class="post">
               
-                  <!-- Upper Card -->
+              
+              
                   <div class="blog">
                   <div class="blog-post">
-                    <!-- Upper Card Image -->
+              
                     <div class="blog-post__img">
                     <img src="images/slider/hackerrank.png" alt="">
                     </div>
-                    <!-- Upper Card Details -->
+              
                     <div class="blog-post__info">
-                    <!-- Date & Time of the achivement -->
-                    <div class="blog-post__date">
+              
+                      <div class="blog-post__date">
                       <span>Sunday,</span>
                       <span>13 October 2019</span>
                     </div>
-                    <!-- Achivement Headline -->
+              
                     <h1 class="bog-post__title">Code Camp - 3</h1>
-                    <!-- About the Achivement -->
+              
                     <p class="blog-post__text">bhjb xjkbk rlk43 llk kmk mgkm 
                       lkmglm lkm rkm mr mt mrt mrmt;lm;rmt ;m;rlmk trnt lkrmt 
                       rtkm rkm mn nn k uhuyg yg uyg ih ih iuhieh gehiug heiuh 
@@ -554,46 +511,47 @@
                       uhiuhiuhui huih uih iuh ihiuxb hbker fm ekbkrf kbueb 
                       kbkjb jb h jh  hon oih oubk iu bugiy gigi y vk big jiu 
                       ljhou jh iub jh</p>
-                    <!-- Clickable link for more information about the achivement and Result -->
-                    <a href="#" class="blog-post__cta">Read more</a>
-                    <!-- Placeholder's Names -->
-                    <div class="prize">
+              
+                      <a href="#" class="blog-post__cta">Read more</a>
+              
+                      <div class="prize">
                       <div class="third">
                         <img src="images/batch/gold.png" alt="">
-                        <!-- First Placeholder's name with Registration number-->
+              
                         <span>Rohit Kumar</span>
                       </div>
                       <div class="third">
                         <img src="images/batch/silver.png" alt="">
-                        <!-- Second Placeholder's name with Registration number-->
+              
                         <span>Deepak Kumar</span>
                       </div>
                       <div class="third">
                         <img src="images/batch/bronze.png" alt="">
-                        <!-- Third Placeholder's name with Registration number-->
+              
                         <span>Venkatesh Kumar</span>
                       </div>
                      </div>
                     </div>
                   </div>
                   </div>
-                  <!-- Lower Card -->
+              
                   <div class="blog">
                   <div class="blog-post">
-                    <!-- Lower Card Image -->
+              
                     <div class="blog-post__img">
                     <img src="images/slider/hackerrank.png" alt="">
                     </div>
-                    <!-- Lower Card Details -->
+              
                     <div class="blog-post__info">
-                    <!-- Date & Time of the achivement -->
-                    <div class="blog-post__date">
+              
+              
+                      <div class="blog-post__date">
                       <span>Sunday,</span>
                       <span>14 September 2019</span>
                     </div>
-                    <!-- Achivement Headline -->
+              
                     <h1 class="bog-post__title">Mind Stormer - Sep 19</h1>
-                    <!-- About the Achivement -->
+              
                     <p class="blog-post__text">bhjb xjkbk rlk43 llk kmk mgkm 
                       lkmglm lkm rkm mr mt mrt mrmt;lm;rmt ;m;rlmk trnt lkrmt 
                       rtkm rkm mn nn k uhuyg yg uyg ih ih iuhieh gehiug heiuh 
@@ -602,23 +560,23 @@
                       uhiuhiuhui huih uih iuh ihiuxb hbker fm ekbkrf kbueb 
                       kbkjb jb h jh  hon oih oubk iu bugiy gigi y vk big jiu 
                       ljhou jh iub jh</p>
-                    <!-- Clickable link for more information about the achivement and Result -->
-                    <a href="#" class="blog-post__cta">Read more</a>
-                    <!-- Placeholder's Names -->
-                    <div class="prize">
+              
+                      <a href="#" class="blog-post__cta">Read more</a>
+              
+                      <div class="prize">
                       <div class="third">
                         <img src="images/batch/gold.png" alt="">
-                        <!-- First Placeholder's name with Registration number-->
+              
                         <span>Venkatesh Kumar</span>
                       </div>
                       <div class="third">
                         <img src="images/batch/silver.png" alt="">
-                        <!-- Second Placeholder's name with Registration number-->
+              
                         <span>Atal Singh</span>
                       </div>
                       <div class="third">
                         <img src="images/batch/bronze.png" alt="">
-                        <!-- Third Placeholder's name with Registration number-->
+              
                         <span>Ankit Kumar</span>
                       </div>
                      </div>
@@ -628,27 +586,27 @@
                   
                 </div>
                 </div>
-                <!-- Fifth card -->
+              
                 <div class="hero-carousel__cell hero-carousel__cell--5">
                 <div class="post">
               
-                  <!-- Upper Card -->
+              
                   <div class="blog">
                   <div class="blog-post">
-                    <!-- Upper Card Image -->
+              
                     <div class="blog-post__img">
                     <img src="images/2.jpg" alt="">
                     </div>
-                    <!-- Upper Card Details -->
+              
                     <div class="blog-post__info">
-                    <!-- Date & Time of the achivement -->
-                    <div class="blog-post__date">
+              
+                      <div class="blog-post__date">
                       <span>Sunday,</span>
                       <span>October 12 2019</span>
                     </div>
-                    <!-- Achivement Headline -->
+              
                     <h1 class="bog-post__title">Hello Guys... I'm here</h1>
-                    <!-- About the Achivement -->
+              
                     <p class="blog-post__text">bhjb xjkbk rlk43 llk kmk mgkm 
                       lkmglm lkm rkm mr mt mrt mrmt;lm;rmt ;m;rlmk trnt lkrmt 
                       rtkm rkm mn nn k uhuyg yg uyg ih ih iuhieh gehiug heiuh 
@@ -657,46 +615,46 @@
                       uhiuhiuhui huih uih iuh ihiuxb hbker fm ekbkrf kbueb 
                       kbkjb jb h jh  hon oih oubk iu bugiy gigi y vk big jiu 
                       ljhou jh iub jh</p>
-                    <!-- Clickable link for more information about the achivement and Result -->
-                    <a href="#" class="blog-post__cta">Read more</a>
-                    <!-- Placeholder's Names -->
-                    <div class="prize">
+              
+                      <a href="#" class="blog-post__cta">Read more</a>
+              
+                      <div class="prize">
                       <div class="third">
                         <img src="images/batch/gold.png" alt="">
-                        <!-- First Placeholder's name with Registration number-->
+              
                         <span>Ankit (GCS-1740558)</span>
                       </div>
                       <div class="third">
                         <img src="images/batch/silver.png" alt="">
-                        <!-- Second Placeholder's name with Registration number-->
+              
                         <span>Ankit (GCS-1740558)</span>
                       </div>
                       <div class="third">
                         <img src="images/batch/bronze.png" alt="">
-                        <!-- Third Placeholder's name with Registration number-->
+              
                         <span>Ankit (GCS-1740558)</span>
                       </div>
                      </div>
                     </div>
                   </div>
                   </div>
-                  <!-- Lower Card -->
+              
                   <div class="blog">
                   <div class="blog-post">
-                    <!-- Lower Card Image -->
+              
                     <div class="blog-post__img">
                     <img src="images/slider/hackerrank.png" alt="">
                     </div>
-                    <!-- Lower Card Details -->
+              
                     <div class="blog-post__info">
-                    <!-- Date & Time of the achivement -->
-                    <div class="blog-post__date">
+              
+                      <div class="blog-post__date">
                       <span>Sunday,</span>
                       <span>28 August 2019</span>
                     </div>
-                    <!-- Achivement Headline -->
+              
                     <h1 class="bog-post__title">Code Cracker - 19</h1>
-                    <!-- About the Achivement -->
+              
                     <p class="blog-post__text">bhjb xjkbk rlk43 llk kmk mgkm 
                       lkmglm lkm rkm mr mt mrt mrmt;lm;rmt ;m;rlmk trnt lkrmt 
                       rtkm rkm mn nn k uhuyg yg uyg ih ih iuhieh gehiug heiuh 
@@ -705,23 +663,23 @@
                       uhiuhiuhui huih uih iuh ihiuxb hbker fm ekbkrf kbueb 
                       kbkjb jb h jh  hon oih oubk iu bugiy gigi y vk big jiu 
                       ljhou jh iub jh</p>
-                    <!-- Clickable link for more information about the achivement and Result -->
-                    <a href="#" class="blog-post__cta">Read more</a>
-                    <!-- Placeholder's Names -->
-                    <div class="prize">
+              
+                      <a href="#" class="blog-post__cta">Read more</a>
+              
+                      <div class="prize">
                       <div class="third">
                         <img src="images/batch/gold.png" alt="">
-                        <!-- First Placeholder's name with Registration number-->
+              
                         <span>Nem Singh</span>
                       </div>
                       <div class="third">
                         <img src="images/batch/silver.png" alt="">
-                        <!-- Second Placeholder's name with Registration number-->
+              
                         <span>Ishant Mishra</span>
                       </div>
                       <div class="third">
                         <img src="images/batch/bronze.png" alt="">
-                        <!-- Third Placeholder's name with Registration number-->
+              
                         <span>Adish Jain</span>
                       </div>
                     </div>
@@ -732,17 +690,14 @@
                 </div>
                 </div>                    
               </div>
-              <!-- About Our Faculties -->
+              
               <div class="faculty">
-                <!-- Image of Faculty Advisor -->
                 <div class="circle circle1">
                 <img src="images/ur.jpg" alt="">
                 </div>
-                <!-- Image os C0-Faculty Advisor -->
                 <div class="circle circle2">
                 <img src="images/ur.jpg" alt="">
                 </div>
-                <!-- Faculty's view -->
                 <div class="para">
                 <h2>Our Faculty Advisor</h2>
                 <div class="border-1"></div>
@@ -781,7 +736,7 @@
                   "The best way to predict the future is to implement it.” <br> <span class="by">— David Heinemeier Hansson</span> 
                 </p>
                 </div>
-              </div>
+              </div> 
 
             </div>
         </div>
@@ -895,7 +850,7 @@
                 tag.style.top = value * 0.3 + 'px';
             })
         </script>
-        <script type="text/javascript">
+        <!-- <script type="text/javascript">
           $(window).on('scroll',function(){
             if($(window).scrollTop()){
               $('nav').addClass('black');
@@ -903,6 +858,18 @@
             else{
               $('nav').removeClass('black');
             }
+          })
+        </script> -->
+        <script type="text/javascript">
+          $(document).ready(function(){
+            $('.menu-toggle').click(function(){
+              $('nav').addClass('active'),
+              $('header').addClass('active')
+            }),
+            $('.close-toggle').click(function(){
+              $('nav').removeClass('active'),
+              $('header').removeClass('active')
+            })
           })
         </script>
     </body>

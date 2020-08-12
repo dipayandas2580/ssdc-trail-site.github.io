@@ -1,0 +1,302 @@
+
+.passout{    
+  padding-top: 300px;
+  width: 100%;
+  text-align: center;
+  background: linear-gradient(#fff 0vh, #060055 40vh); 
+}.passout h2{
+  color: #fff;
+}
+.passout .under-line{
+  width: 100px;
+  height: 4px;
+  background-color: #FCBF1E;
+  margin: 0px auto;
+  margin-bottom: 100px;
+}
+.batch-wise{
+  height: 200px;
+  transform: translateX(-600px);
+}
+.batch{
+  width: 1200px;
+  position: absolute;
+  color: #fff;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, .8);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-align: center;
+  padding: 25px 0;
+  overflow: hidden;
+}
+.batch:hover{
+  text-decoration: none;
+  color: #fff;
+  box-shadow: 0 10px 20px 4px rgba(0, 0, 0, .5);
+  background-color: #05004e;
+}
+.batch:hover span:nth-child(1){
+  animation: animate-top .8s linear infinite;
+}
+.batch:hover span:nth-child(2){
+  animation: animate-right .8s linear infinite;
+  animation-delay: .4s;
+}
+.batch:hover span:nth-child(3){
+  animation: animate-bottom .8s linear infinite;
+  animation-delay: .4s;
+}
+.batch:hover span:nth-child(4){
+  animation: animate-left .8s linear infinite;
+}
+.batch:before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.05);
+}
+.batch span:nth-child(1){
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background: linear-gradient(to right, #fff900, #1799f1);
+  animation: animate-top 2s linear infinite;
+}
+.batch span:nth-child(2){
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 2px;
+  background: linear-gradient(to bottom, #fff900, #1799f1);
+  animation: animate-right 2s linear infinite;
+  animation-delay: 1s;
+}
+.batch span:nth-child(3){
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background: linear-gradient(to left, #fff900, #1799f1);
+  animation: animate-bottom 2s linear infinite;
+  animation-delay: 1s;
+}
+.batch span:nth-child(4){
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 2px;
+  background: linear-gradient(to top, #fff900, #1799f1);
+  animation: animate-left 2s linear infinite;
+}
+@keyframes animate-top{
+  0%{transform: translateX(-100%);}
+  100%{transform: translateX(100%);}
+}
+@keyframes animate-left{
+  0%{transform: translateY(100%);}
+  100%{transform: translateY(-100%);}
+}
+@keyframes animate-right{
+  0%{transform: translateY(-100%);}
+  100%{transform: translateY(100%);}
+}
+@keyframes animate-bottom{
+  0%{transform: translateX(100%);}
+  100%{transform: translateX(-100%);}
+}
+.modal-header h5{
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+  text-decoration: underline;
+  cursor: default;
+}
+.modal-body{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    max-width: 100%;
+    justify-content: space-around;
+    background-color: #a8d5ff;
+}
+.passout-members:hover{
+  cursor: pointer;
+  transform: scale(1.02);
+  transition: .3s;
+}
+.passout-members{
+    box-shadow: 7px 8px 20px 1px rgba(0, 0, 0, .7) ;  
+    border-radius: 5px;
+    background-color:#25006b;
+    display: flex;
+    flex-basis: 48%;
+    max-width: 50%;
+    margin: 10px 0;
+    height: 150px;
+}
+.passout-members .picture{
+  background-color: #fff;
+  flex-basis: 50%;
+  max-width: 50%;
+  height: calc(100% - 20px);
+  margin: 10px 0 10px 10px;
+  border-radius: 10px 0 0 10px;
+  overflow: hidden;
+}
+.passout-members .picture img{
+  height: 120%;
+  width: 100%;
+}
+.passout-members .picture img:hover{
+  transform: scale(1.1);
+  transition: ease-in-out .5s;
+}
+
+.passout-all-details{
+  flex-basis: 55%;
+}
+.passout-details{
+  margin: 10px;
+  height: calc(100% - 65px);
+  text-align: center;
+}
+.passout-details h3{
+  letter-spacing: 1px;
+  font-size: 20px;
+  font-family: fantasy;
+  color: #fff;
+  padding-top: 12px;
+}
+.passout-details .line1{
+  color: #fff;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 12px;
+  margin: 0;
+}
+.passout-details .line2{
+  color: #fff;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 10px;
+  margin: 5px 0;
+  font-style: italic;
+}
+
+.passout-social-media{
+  text-align: center;
+}
+.passout-social-media a{
+  display: inline-block;
+  height: 32px;
+  width: 32px;
+  background-color: #ffffff;
+  color: #190088;
+  border-radius: 50%;
+  margin: 0 2px;
+  text-align: center;
+  line-height: 32px;
+  font-size: 16px;
+  transition: all .5s ease;
+}
+.passout-social-media a:hover{
+  transform: translateY(-5px);
+}
+.passout-social-media a:hover .fa{
+  color: #190088;
+} 
+.passout-social-media .fa{
+    color: rgb(65, 65, 65);
+    cursor: pointer;
+    transition: transform .5s;
+}
+@media (min-width: 576px){
+  .modal-dialog {
+    max-width: 800px;
+  }
+}
+
+
+@media screen and (max-width: 1350px){
+  .batch{
+    width: 960px;
+  }
+  .batch-wise{
+    transform: translateX(-480px);
+  }
+}
+@media screen and (max-width: 1100px){
+  .batch{
+    width: 700px;
+    padding: 20px 0;
+  }
+  .batch-wise{
+    transform: translateX(-350px);
+  }
+}
+@media screen and (max-width: 780px){
+  .passout-members{
+    flex-basis: 70%;
+    max-width: 70%;
+  }
+  .batch{
+    width: 600px;
+  }
+  .batch-wise{
+    transform: translateX(-300px);
+  }
+}
+@media screen and (max-width: 660px){
+  .batch{
+    width: 480px;
+    padding: 15px 0;
+  }
+  .batch-wise{
+    height: 150px;
+    transform: translateX(-240px);
+  }
+}
+@media screen and (max-width: 520px){
+  .passout-members{
+    flex-basis: 80%;
+    max-width: 80%;
+  }
+  .batch{
+    width: 360px;
+    font-size: 25px;
+  }
+  .batch-wise{
+    transform: translateX(-180px);
+  }
+}
+@media screen and (max-width: 414px){
+  .passout-social-media a{
+    height: 26px;
+    width: 26px;
+    line-height: 26px;
+  }
+  .passout-members{
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 360px){
+  
+  .batch{
+    width: 300px;
+  }
+  .batch-wise{
+    height: 130px;
+    transform: translateX(-150px);
+  }
+}

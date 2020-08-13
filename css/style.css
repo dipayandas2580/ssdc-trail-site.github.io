@@ -1431,8 +1431,20 @@ a{
     width: 140px;
     height: 140px;
   }
-  .footer-menu-one{
-    display: none;
+  .footer-social-icons{
+    transform: scale(.8);
+  }
+  .footer-menu-one ul li{
+    margin: 0 10px;
+  }
+  .footer-menu-two ul li{
+    margin: 0 10px;
+  }
+  .footer-menu-one ul li a{
+    font-size: 12px;
+  }
+  .footer-menu-two ul li a{
+    font-size: 12px;
   }
   .skills{
     transform: rotate(90deg);
@@ -1587,6 +1599,18 @@ a{
   .flickity-button{
     transform: scale(.5);
   }
+  .footer-social-icons{
+    transform: scale(.8);
+  }
+  .footer-menu-one{
+    display: none;
+  }
+  .footer-menu-two ul li{
+    margin: 0 10px;
+  }
+  .footer-menu-two ul li a{
+    font-size: 12px;
+  }
 }
 @media screen and (max-width: 600px){
   
@@ -1736,14 +1760,19 @@ a{
     height: 80px;
   }
   .footer-menu-two{
-    display: none;
+    margin-top: 10px;
+  }
+  .footer-menu-two ul li{
+    margin: 0 5px;
+  }
+  .footer-menu-two ul li a{
+    font-size: 10px;
   }
   .footer-bottom p{
     font-size: 8px;
+    letter-spacing: 2px;
   }
-  .footer-social-icons ul li {
-    transform: scale(.8);
-  }
+
 }
 @media screen and (max-width: 415px){
   .b{

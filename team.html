@@ -28,11 +28,10 @@
 			<div class="close-navbar">
 			  <nav>
 				<ul>
-				  <li><a href="#" class="active">Home</a></li>
-				  <li><a href="#about-us">About</a></li>
-				  <li><a href="#activities">Activities</a></li>
-				  <li><a href="#">Team</a></li>
-				  <li><a href="#fancy-form">contact</a></li>
+				  <li><a href="./index.html" class="active">Home</a></li>
+				  <li><a href="#">Activities</a></li>
+				  <li><a href="#">Gallery</a></li>
+				  <li><a href="./index.html#fancy-form">contact us</a></li>
 				</ul>
 			  </nav>  
 			</div>
@@ -1744,6 +1743,22 @@
 			  })
 			})
 		</script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+			  $('.menu-toggle').click(function(){
+				$('nav').addClass('active'),
+				$('header').addClass('active')
+			  }),
+			  $('.close-toggle').click(function(){
+				$('nav').removeClass('active'),
+				$('header').removeClass('active')
+			  }),
+			  $('.close-navbar').click(function(){
+				$('nav').removeClass('active'),
+				$('header').removeClass('active')
+			  })
+			})
+		  </script>
 	</body>
 
 </html>

@@ -19,6 +19,7 @@
   transform: translateX(-600px);
 }
 .batch{
+  background-color: #060055;
   width: 1200px;
   position: absolute;
   color: #fff;

@@ -170,7 +170,7 @@
 }
 .passout-details{
   margin: 10px;
-  height: calc(100% - 65px);
+  height: calc(100% - 60px);
   text-align: center;
 }
 .passout-details h3{
@@ -178,7 +178,7 @@
   font-size: 20px;
   font-family: fantasy;
   color: #fff;
-  padding-top: 12px;
+  padding-top: 5px;
 }
 .passout-details .line1{
   color: #fff;
@@ -196,6 +196,7 @@
 
 .passout-social-media{
   text-align: center;
+  transform: scale(.9);
 }
 .passout-social-media a{
   display: inline-block;
@@ -221,9 +222,11 @@
     cursor: pointer;
     transition: transform .5s;
 }
-@media (min-width: 576px){
+
+
+@media screen and (min-width: 576px){
   .modal-dialog {
-    max-width: 800px;
+    width: 800px;
   }
 }
 

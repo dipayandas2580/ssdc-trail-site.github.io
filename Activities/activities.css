@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    background-image: linear-gradient(rgb(32, 32, 70),rgb(36, 36, 160));
+    background-repeat: no-repeat;
+}
+/* .activities
+{
+    position: relative;
+    margin: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+
+}
+.activities a{
+    position: relative;
+    color: white;
+    margin: 0 20px;
+    text-decoration: none;
+} */
+
+.heading_2{
+    font-weight: bold;
+    float: left;
+}
+
+.activity-bar {
+    padding-top: 90px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.activity-bar a{
+    position: relative;
+    margin: 0 8vw;
+    font-size: medium;
+    color: white;
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+}
+ .activity-bar #marker{
+    position: absolute;
+    left: 0;
+    height: 3px;
+    width: 0;
+    background: #FCBF1E;;
+    bottom: -8px;
+    transition: 0.5s;
+    border-radius: 3px;
+   
+}
+
+/* workshops */
+.content{
+    display: none;
+    
+}
+.content-link{
+    color: #fff;
+}
+
+.workshops{
+    color: white;
+    margin: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+     
+}
+a:not([href]):not([tabindex])
+{
+    color: white;
+}
+a:not([href]):not([tabindex]):hover{
+    color: white;
+}
+
+.workshops span{
+
+    font-size: 24px;
+   
+    margin-left: 20px;
+}
+
+.workshop{
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px 2px rgba(0,0,0,0.5);
+    transition: 0.3s;
+    margin: 0 10px;
+    padding: 10px;
+    width: 350px;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  
+  .workshop:hover {
+    box-shadow: 0 8px 16px rgba(255,255,255,0.5);
+  }
+  
+  .workshop img {
+      height: 300px;
+      width: 300px;
+    border-radius: 5px 5px 0 0;
+    margin-bottom: 5px;
+  }
+  
+  .container {
+      color: black;
+    padding: 2px 16px;
+    
+  }
+  .container button
+  {
+    margin-top: 10px;
+    font-family: "Raleway",sans-serif;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    color:#868686;
+    background-color:#fff;
+    outline: none;
+    border: 0;
+    cursor: pointer;
+  }
+
+
+
+
